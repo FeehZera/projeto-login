@@ -1,0 +1,32 @@
+@charset "UTF-8";
+/*
+    Palhetas de cores
+-------------------------
+    azul #45658F
+    azul fraco 
+    lilas #BE67DB
+    vermelho #B35035
+    laranja #DB785C
+*/
+*{
+    margin: 0px;
+    padding: 0px;
+}
+body{
+    height: 100vh;
+    width: 100vw;
+    background-image: linear-gradient(180deg, #8FAFD9, #BE67DB); 
+    background-repeat: no-repeat;
+}
+img{
+    width: 20px;
+    height: 20px;
+}
+main{
+    margin: auto;
+    width: 200px;
+    height: 100px;
+}
+main > section > div{
+    display: inline-block;
+}
