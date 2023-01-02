@@ -2,31 +2,84 @@
 /*
     Palhetas de cores
 -------------------------
-    azul #45658F
+    azul 
     azul fraco 
     lilas #BE67DB
     vermelho #B35035
     laranja #DB785C
 */
+:root{
+    --color1: #45658F ;
+}
 *{
     margin: 0px;
     padding: 0px;
 }
 body{
+    background-color: #9818c2;
     height: 100vh;
-    width: 100vw;
-    background-image: linear-gradient(180deg, #8FAFD9, #BE67DB); 
-    background-repeat: no-repeat;
+    font-family: Arial, Helvetica, sans-serif;
+}
+section{
+    margin: auto;
+    margin-top: 40px;
+    background-color: white;
+    width: 300px;
+    height: 500px;
+    border-radius: 20px;
 }
 img{
-    width: 20px;
-    height: 20px;
+    width: 300px;
+    height: 200px;
+    border-radius: 20px 20px 0px 0px;
 }
-main{
+h1{
+    text-align: center;
+}
+#mensagem > p{
     margin: auto;
-    width: 200px;
-    height: 100px;
+    padding: 10px;
+    font-size: 1em;
+    text-decoration: none;
 }
-main > section > div{
-    display: inline-block;
+#form_email, #form_senha{
+   text-decoration: none;
+   border: none;
+   border-bottom: 2px solid purple; 
+   width: 200px;
+   margin: auto;
+   cursor: text;
+}
+#form_submit{
+    text-align: center;
+}
+#form_submit > input{
+    text-align: center;
+    margin-top: 10px;
+    padding: 5px 80px 5px 80px;
+    background-color: #DB785C;
+    border: none;
+    border-radius: 10px;
+}
+#form_email > input, #form_senha > input{
+    text-decoration: none;
+    border: none; 
+    outline: none;
+    text-align: center;
+} 
+input:focus{
+    text-decoration: none;
+}
+#esqueceu, a{
+    text-align: center;
+    text-decoration: none;
+    margin-top: 5px;
+    color: black;
+}
+#esqueceu a:hover{
+    text-decoration: underline;
+    color: blue;
+}
+@media screen and(min-width: 350px) {
+    
 }
