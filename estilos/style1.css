@@ -84,3 +84,6 @@ input:focus{
 #button{
     text-align: center;
 }
+label, input{
+    display: inline;
+}
