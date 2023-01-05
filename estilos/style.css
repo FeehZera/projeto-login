@@ -1,98 +1,86 @@
 @charset "UTF-8";
-/*
-    Palhetas de cores
--------------------------
-    azul 
-    azul fraco 
-    lilas 
-    vermelho 
-    laranja #DB785C
-*/
+
 :root{
-    --color1: #45658F ;
-    --color2: #5286da;
-    --color3: #BE67DB;
-    --color4: #B35035;
-    --color5: #DB785C;
+    --color1: #308AA6;
+    --color2: #3AC7F2;
+    --color3: #F25280;
+    --color4: #F2E96B;
+    --color5: #A6284B;
 }
 *{
     margin: 0px;
     padding: 0px;
+    box-sizing: border-box;
 }
 body{
-    background-color: #9818c2;
+    background-image: linear-gradient(180deg, var(--color1), var(--color4));
+    background-repeat: no-repeat;
     height: 100vh;
+    width: 100vw;
     font-family: Arial, Helvetica, sans-serif;
 }
-section{
-    margin: auto;
-    margin-top: 40px;
-    background-color: white;
-    width: 300px;
-    height: 500px;
-    border-radius: 20px;
+main{
+    position: relative;
+    width: 100vw;
+    height: 100vh;
 }
-img{
+section{
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
     width: 300px;
-    height: 200px;
+    height: 550px;
+    border-radius: 20px;
+    background-color: white;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.455);
+    overflow: hidden;
+}
+#box1{
+    width: 300px;
+    height: 250px;
+    background-color: black;
     border-radius: 20px 20px 0px 0px;
 }
-h1{
-    text-align: center;
+#box1 > img{
+    width: 300px;
+    height: 250px;
 }
-#mensagem > h1{
-    padding-top: 10px;
-    padding-bottom: 5px;
-}
-#mensagem > p{
-    margin: auto;
-    padding: 10px;
-    font-size: 1em;
-    text-decoration: none;
-}
-#form_email, #form_senha{
-   text-decoration: none;
-   border: none;
-   border-bottom: 2px solid purple; 
-   width: 200px;
-   margin: auto;
-   cursor: text;
-}
-#form_submit{
-    text-align: center;
-}
-#form_submit > input{
-    text-align: center;
-    margin-top: 10px;
-    padding: 5px 80px 5px 80px;
-    background-color: rgb(25, 112, 25);
-    border: none;
-    border-radius: 10px;
-}
-#form_email > input, #form_senha > input{
-    text-decoration: none;
-    border: none; 
-    outline: none;
-    text-align: center;
-} 
-input:focus{
-    text-decoration: none;
-}
-#esqueceu, a{
-    text-align: center;
-    text-decoration: none;
-    margin-top: 5px;
-    color: black;
-}
-#esqueceu a:hover{
-    text-decoration: underline;
-    color: blue;
-}
-@media screen and (min-width: 330px) {
-    body{
-        background-image: linear-gradient( 0deg, var(--color3), var(--color2));
-        background-repeat: no-repeat;
-        height: 100vh;
-    }
+#box2{
 
+}
+#box1, #box2{
+
+}
+#txt > p{
+    padding: 10px 15px 10px 15px;
+    text-align: justify;
+}
+#txt > h1{
+    text-align: center;
+    padding: 10px 0px 10px 0px;
+}
+input{
+    border: none;
+    text-align: center;
+}
+input:focus{
+    outline: none;
+}
+.inputs{
+    text-align: center;
+    margin: auto;
+    border-bottom: 1px solid var(--color5);
+    width: 200px;
+}
+#sub{
+    background-color: var(--color5);
+    color: white;
+    padding: 10px 70px 10px 70px;
+    margin-top: 10px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.576);
+}
+#button{
+    text-align: center;
 }

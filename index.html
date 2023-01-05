@@ -9,39 +9,38 @@
     <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet"/>
 </head>
 <body>
-
     <main>
         <section>
 
-            <div id="imagem">
-                <img src="imagens/colors.jpg" alt="imagem de login">
+            <div id="box1"> <!---->
+                <img src="imagens/colors.jpg" alt="background">
             </div>
 
-            <div id="mensagem">
+            <div id="box2"> <!---->
 
-                <h1>Login</h1>
+                <div id="txt">
+                    <h1>Login</h1>
+                    <p>Seja bem-vindo(a) novamente. Faça o login para acessar sua conta e poder fazer as configurações no seu ambiente.</p>
+                </div>
 
-                <p>Seja bem-vindo(a) novamente. Faça o login para acessar sua conta e poder fazer as configurações no seu ambiente.</p>
+                <form action="login.php">
 
-                <form action="login.php" method="post">
+                    <div class="inputs" >
+                        <labl for="iemail"><span class="material-symbols-outlined">person</span></labl> <br>
+                        <input type="email" id="iemail" placeholder="E-mail">
+                    </div>
 
-                        <div id="form_email">
-                            <label for="iemail"><span id="gmail" class="material-symbols-outlined">person</span></label>
-                            <input type="email" id="iemail" name="email" placeholder="E-mail">
-                        </div>
+                    <div class="inputs" >
+                        <labl for="ikey"><span class="material-symbols-outlined">key</span></labl> <br>
+                        <input type="password" id="ikey" placeholder="Senha">
+                    </div>
 
-                        <div id="form_senha">
-                            <label for="isenha"><span id="gsenha" class="material-symbols-outlined">key</span></label>
-                            <input type="password" id="isenha" name="senha" placeholder="Senha">
-                        </div>
-
-
-                        <div id="form_submit">
-                            <input type="submit" value="Enviar">
-                        </div>
-
+                    <div id="button">
+                        <input type="submit" id="sub">
+                    </div>
+                    
                 </form>
-                        <div id="esqueceu"><a href="#" >Esqueceu a senha?</a></div>
+
             </div>
 
         </section>
