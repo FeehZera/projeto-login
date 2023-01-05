@@ -4,12 +4,16 @@
 -------------------------
     azul 
     azul fraco 
-    lilas #BE67DB
-    vermelho #B35035
+    lilas 
+    vermelho 
     laranja #DB785C
 */
 :root{
     --color1: #45658F ;
+    --color2: #5286da;
+    --color3: #BE67DB;
+    --color4: #B35035;
+    --color5: #DB785C;
 }
 *{
     margin: 0px;
@@ -36,6 +40,10 @@ img{
 h1{
     text-align: center;
 }
+#mensagem > h1{
+    padding-top: 10px;
+    padding-bottom: 5px;
+}
 #mensagem > p{
     margin: auto;
     padding: 10px;
@@ -57,7 +65,7 @@ h1{
     text-align: center;
     margin-top: 10px;
     padding: 5px 80px 5px 80px;
-    background-color: #DB785C;
+    background-color: rgb(25, 112, 25);
     border: none;
     border-radius: 10px;
 }
@@ -80,6 +88,11 @@ input:focus{
     text-decoration: underline;
     color: blue;
 }
-@media screen and(min-width: 350px) {
-    
+@media screen and (min-width: 330px) {
+    body{
+        background-image: linear-gradient( 0deg, var(--color3), var(--color2));
+        background-repeat: no-repeat;
+        height: 100vh;
+    }
+
 }
