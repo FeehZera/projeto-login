@@ -5,8 +5,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login</title>
-    <link rel="stylesheet" href="estilos/style.css">
+    <link rel="stylesheet" href="estilos/style.css" media="(max-width: 600px)">
+    <link rel="stylesheet" href="estilos/style2.css" media="(min-width: 600px)">
     <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet"/>
+    
 </head>
 <body>
     <main>
@@ -26,12 +28,12 @@
                 <form action="login.php">
 
                     <div class="inputs" >
-                        <labl for="iemail"><span class="material-symbols-outlined">person</span></labl>
+                        <labl for="iemail"><span class="material-symbols-outlined">person</span></labl> <br>
                         <input type="email" id="iemail" placeholder="E-mail">
                     </div>
 
                     <div class="inputs" >
-                        <labl for="ikey"><span class="material-symbols-outlined">key</span></labl>
+                        <labl for="ikey"><span class="material-symbols-outlined">key</span></labl> <br>
                         <input type="password" id="ikey" placeholder="Senha">
                     </div>
 
@@ -40,7 +42,7 @@
                     </div>
                     
                 </form>
-
+                <a href="#" id="forget">Esqueceu a senha?</a>
             </div>
 
         </section>
